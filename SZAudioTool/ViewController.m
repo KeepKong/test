@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "SZAudioTool.h"
 #import "SZAudioPlayerTool.h"
-#import "SZAudioTool/Transcode/LameTool.h"
+//#import "SZAudioTool/Transcode/LameTool.h"
 //#import "LameTool.h"
 
 @interface ViewController ()
@@ -27,7 +27,7 @@
     
     
     //使用lame将m4a格式压缩并转成mp3格式
-    [LameTool audioToMP3:[self fetchFilePathWithName:@"test1.caf"] isDeleteSourchFile:false];
+//    [LameTool audioToMP3:[self fetchFilePathWithName:@"test1.caf"] isDeleteSourchFile:false];
 }
 
 #pragma mark - 获取文件存放的目录

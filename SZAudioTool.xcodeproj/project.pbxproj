@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5719E9AE221AB6A4008E6F95 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5719E9AC221AB6A4008E6F95 /* libmp3lame.a */; };
-		5719E9B1221AB6C7008E6F95 /* LameTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5719E9AF221AB6C7008E6F95 /* LameTool.m */; };
 		57C101002216A3790070E45E /* MeterDecibelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C100FF2216A3790070E45E /* MeterDecibelTool.m */; };
 		57C101032216B08B0070E45E /* SZAudioPlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C101022216B08B0070E45E /* SZAudioPlayerTool.m */; };
 		D2CDFE722215AC2600EE89CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CDFE712215AC2600EE89CD /* AppDelegate.m */; };
@@ -41,10 +39,6 @@
 
 /* Begin PBXFileReference section */
 		5719E9AA2216B77F008E6F95 /* Sington.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sington.h; sourceTree = "<group>"; };
-		5719E9AC221AB6A4008E6F95 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
-		5719E9AD221AB6A4008E6F95 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
-		5719E9AF221AB6C7008E6F95 /* LameTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LameTool.m; sourceTree = "<group>"; };
-		5719E9B0221AB6C7008E6F95 /* LameTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LameTool.h; sourceTree = "<group>"; };
 		57C100FE2216A3790070E45E /* MeterDecibelTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeterDecibelTool.h; sourceTree = "<group>"; };
 		57C100FF2216A3790070E45E /* MeterDecibelTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MeterDecibelTool.m; sourceTree = "<group>"; };
 		57C101012216B08B0070E45E /* SZAudioPlayerTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SZAudioPlayerTool.h; sourceTree = "<group>"; };
@@ -74,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5719E9AE221AB6A4008E6F95 /* libmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,17 +88,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5719E9AB221AB6A4008E6F95 /* Transcode */ = {
-			isa = PBXGroup;
-			children = (
-				5719E9B0221AB6C7008E6F95 /* LameTool.h */,
-				5719E9AF221AB6C7008E6F95 /* LameTool.m */,
-				5719E9AC221AB6A4008E6F95 /* libmp3lame.a */,
-				5719E9AD221AB6A4008E6F95 /* lame.h */,
-			);
-			path = Transcode;
-			sourceTree = "<group>";
-		};
 		D2CDFE642215AC2600EE89CD = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +146,6 @@
 		D2CDFEA52215AE4200EE89CD /* SZAudioTool */ = {
 			isa = PBXGroup;
 			children = (
-				5719E9AB221AB6A4008E6F95 /* Transcode */,
 				5719E9AA2216B77F008E6F95 /* Sington.h */,
 				D2CDFEA22215AC4100EE89CD /* SZAudioTool.h */,
 				D2CDFEA32215AC4100EE89CD /* SZAudioTool.m */,
@@ -306,7 +287,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5719E9B1221AB6C7008E6F95 /* LameTool.m in Sources */,
 				D2CDFE752215AC2600EE89CD /* ViewController.m in Sources */,
 				D2CDFEA42215AC4100EE89CD /* SZAudioTool.m in Sources */,
 				D2CDFE802215AC2700EE89CD /* main.m in Sources */,
@@ -481,6 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2DLB5HANTP;
 				INFOPLIST_FILE = SZAudioTool/Info.plist;
@@ -494,6 +475,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sz.SZAudioTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -502,6 +484,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2DLB5HANTP;
 				INFOPLIST_FILE = SZAudioTool/Info.plist;
@@ -515,6 +498,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sz.SZAudioTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
