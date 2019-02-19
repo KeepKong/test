@@ -23,18 +23,17 @@
     if (![fm fileExistsAtPath:sourcePath])
     {
         NSLog(@"文件不存在");
+        return nil;
     }
-
     // 输出路径
     NSString *outPath = [[sourcePath stringByDeletingPathExtension] stringByAppendingString:@".mp3"];
-
 
     @try {
         int read, write;
 
         FILE *pcm = fopen([inPath cStringUsingEncoding:1], "rb");  //source 被转换的音频文件位置
         fseek(pcm, 4*1024, SEEK_CUR);                                   //skip file header
-        FILE *mp3 = fopen([outPath cStringUsingEncoding:1], "wb");  //output 输出生成的Mp3文件位置
+        FILE *mp3 = fopen([outPath cStringUsingEncoding:1], "wb");  //output 输出生成的Mp3文件位置,这里如果需要读取mp3文件，则需要写上wb+
 
         const int PCM_SIZE = 8192;
         const int MP3_SIZE = 8192;
