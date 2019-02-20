@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5719E9B7221C049C008E6F95 /* LameTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5719E9B3221C049C008E6F95 /* LameTool.m */; };
-		5719E9B8221C049C008E6F95 /* mp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5719E9B4221C049C008E6F95 /* mp3lame.a */; };
+		5719E9B8221C049C008E6F95 /* lmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5719E9B4221C049C008E6F95 /* lmp3lame.a */; };
 		57C101002216A3790070E45E /* MeterDecibelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C100FF2216A3790070E45E /* MeterDecibelTool.m */; };
 		57C101032216B08B0070E45E /* SZAudioPlayerTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C101022216B08B0070E45E /* SZAudioPlayerTool.m */; };
 		D2CDFE722215AC2600EE89CD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CDFE712215AC2600EE89CD /* AppDelegate.m */; };
@@ -42,7 +42,7 @@
 /* Begin PBXFileReference section */
 		5719E9AA2216B77F008E6F95 /* Sington.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sington.h; sourceTree = "<group>"; };
 		5719E9B3221C049C008E6F95 /* LameTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LameTool.m; sourceTree = "<group>"; };
-		5719E9B4221C049C008E6F95 /* mp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = mp3lame.a; sourceTree = "<group>"; };
+		5719E9B4221C049C008E6F95 /* lmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = lmp3lame.a; sourceTree = "<group>"; };
 		5719E9B5221C049C008E6F95 /* LameTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LameTool.h; sourceTree = "<group>"; };
 		5719E9B6221C049C008E6F95 /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
 		57C100FE2216A3790070E45E /* MeterDecibelTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MeterDecibelTool.h; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5719E9B8221C049C008E6F95 /* mp3lame.a in Frameworks */,
+				5719E9B8221C049C008E6F95 /* lmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +100,7 @@
 			children = (
 				5719E9B5221C049C008E6F95 /* LameTool.h */,
 				5719E9B3221C049C008E6F95 /* LameTool.m */,
-				5719E9B4221C049C008E6F95 /* mp3lame.a */,
+				5719E9B4221C049C008E6F95 /* lmp3lame.a */,
 				5719E9B6221C049C008E6F95 /* lame.h */,
 			);
 			path = Transcode;
