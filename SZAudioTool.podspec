@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "SZAudioTool/SZAudioTool/**/*.{h,m}"
+  s.source_files  = "SZAudioTool/SZAudioTool/*.{h,m}","SZAudioTool/SZAudioTool/**/*.{h,m,a}"
 #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -118,7 +118,7 @@ Pod::Spec.new do |s|
   # s.framework  = 'SystemConfiguration'
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
-  # s.library   = "iconv"
+    s.library   = "mp3lame"
   # s.libraries = "iconv", "xml2"
 
 
