@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SZAudioTool"
-  s.version      = "0.0.6"
+  s.version      = "0.0.8"
   s.summary      = "SZAudioTool Summary"
 
   # This description is used to generate tags and improve search results.
@@ -89,7 +89,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "SZAudioTool/SZAudioTool/*.{h,m}","SZAudioTool/SZAudioTool/**/*.{h,m}"
+  s.source_files  = "SZAudioTool/SZAudioTool/*.{h,m}"
 #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -108,6 +108,9 @@ Pod::Spec.new do |s|
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
+# s.resource_bundles = {
+#  'SZAudioTool' => ['SZAudioTool/SZAudioTool/Transcode/*.a']
+#  }
 
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -119,7 +122,7 @@ Pod::Spec.new do |s|
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
 #s.ios.library   = 'lmp3lame'
-    s.ios.vendored_library = 'Pod/Assets/libmp3lame.a'
+    s.ios.vendored_library = 'SZAudioTool/SZAudioTool/**.a'
   # s.libraries = "iconv", "xml2"
 
 
@@ -129,7 +132,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-   s.requires_arc = true
+# s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"

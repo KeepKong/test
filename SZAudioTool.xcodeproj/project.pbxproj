@@ -95,17 +95,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5719E9B2221C049C008E6F95 /* Transcode */ = {
-			isa = PBXGroup;
-			children = (
-				5719E9B5221C049C008E6F95 /* LameTool.h */,
-				5719E9B3221C049C008E6F95 /* LameTool.m */,
-				5719E9B4221C049C008E6F95 /* libmp3lame.a */,
-				5719E9B6221C049C008E6F95 /* lame.h */,
-			);
-			path = Transcode;
-			sourceTree = "<group>";
-		};
 		D2CDFE642215AC2600EE89CD = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +153,10 @@
 		D2CDFEA52215AE4200EE89CD /* SZAudioTool */ = {
 			isa = PBXGroup;
 			children = (
-				5719E9B2221C049C008E6F95 /* Transcode */,
+				5719E9B5221C049C008E6F95 /* LameTool.h */,
+				5719E9B3221C049C008E6F95 /* LameTool.m */,
+				5719E9B4221C049C008E6F95 /* libmp3lame.a */,
+				5719E9B6221C049C008E6F95 /* lame.h */,
 				5719E9AA2216B77F008E6F95 /* Sington.h */,
 				D2CDFEA22215AC4100EE89CD /* SZAudioTool.h */,
 				D2CDFEA32215AC4100EE89CD /* SZAudioTool.m */,
