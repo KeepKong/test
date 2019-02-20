@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SZAudioTool"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "SZAudioTool Summary"
 
   # This description is used to generate tags and improve search results.
@@ -115,7 +115,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-   s.framework  = 'SystemConfiguration'
+  # s.framework  = 'SystemConfiguration'
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
